@@ -1,0 +1,62 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.__sub__" />
+          <option value="set.index" />
+          <option value="object.__dificuldade" />
+          <option value="object._gerar_valor" />
+          <option value="object._gerar_resultado" />
+          <option value="object.__valor1" />
+          <option value="object.__valor2" />
+          <option value="object.__operacao" />
+          <option value="object.__resultado" />
+          <option value="object.operacao" />
+          <option value="object.valor1" />
+          <option value="object.valor2" />
+          <option value="object.dificuldade" />
+          <option value="object._op_simbolo" />
+          <option value="object.resultado" />
+          <option value="object.__nome" />
+          <option value="object.__codigo" />
+          <option value="object.__preco" />
+          <option value="object.__id" />
+          <option value="object.__cpf" />
+          <option value="object.__saldo" />
+          <option value="object.__sobrenome" />
+          <option value="object.__id_conta" />
+          <option value="object.__email" />
+          <option value="object.__data_nascimento" />
+          <option value="object.__data_cadastro" />
+          <option value="object.codigo" />
+          <option value="object.nome" />
+          <option value="object.data_nascimento" />
+          <option value="object.data_cadastro" />
+          <option value="object.__limite" />
+          <option value="object.__saldo_total" />
+          <option value="object.__cliente" />
+          <option value="object.__calcula_saldo_total" />
+          <option value="object.numero" />
+          <option value="object.cliente" />
+          <option value="object.saldo" />
+          <option value="object.__numero" />
+          <option value="str.strpftime" />
+          <option value="object._calcula_saldo_total" />
+          <option value="object.saldo_total" />
+          <option value="object.limite" />
+          <option value="map.__setitem__" />
+          <option value="_dict_values.__getitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
