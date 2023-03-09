@@ -133,3 +133,11 @@ AUTHENTICATION_BACKEND = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Para o Django saber quais templates renderizar na lógica do login e logout eu preciso colocar essas rotas aqui no
+# settings.py. OBS: Final do arquivo
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT = 'login'
