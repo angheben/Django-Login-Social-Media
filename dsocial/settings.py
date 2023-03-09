@@ -141,3 +141,20 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT = 'login'
+
+# Configurações para Facebook
+
+SOCIAL_AUTH_RAISE_EXEPTIONS = False     # Se houver algum erro durante a execução eu não quero que gere uma excessão
+SOCIAL_AUTH_FACEBOOK_KEY = '114342424934333'    # ID que geramos no site do facebook
+SOCIAL_AUTH_FACEBOOK_SECRET = '13babb8b77a7dd18cbd7a52047fe4ebb'    # Essa é a chave secreta que encontramos ao lado do
+# ID
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {      # Esses são os campos que eu quero pegar do Facebook
+    'fields': 'id, name, email, picture.type{large}, link'
+}
+SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = {
+    ('name', 'name'),
+    ('email', 'email'),
+    ('picture', 'picture'),
+    ('link', 'profile_url'),
+}

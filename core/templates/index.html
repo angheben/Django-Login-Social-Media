@@ -5,5 +5,22 @@
         <div class="col-sm-12 mb-3">
             <h4 class="text-center"> Bem vindo(a) {{ user.username }}</h4>
         </div>
+        {% for a in backends.associated %}  <!-- Esse backends vem de um das variáveis do settings que colocamos no templates do settings -->
+            {% if a.provider == 'facebook' %}
+                <div class="col-md 4 text-center">
+                    <img src="{{ a.extra_data.picture.data.url }}" alt="" width="130" height="130" style="border-radius: 50%;">
+                </div>
+                <div class="md-8 social container my-2">
+                    <p> Logado via: {{ a.provider|title }}</p>
+                    <p> Nome: {{ a.extra_data.nome }}</p>   <!-- Esse extra data vem do campo SOCIAL_AUTH_FACEBOOK_EXTRA_DATA que colocamos no settings -->
+                    <p> Profile: <a href="{{ a.extra_data.profile }}">Link</a></p>
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="col-sm-12 mt-2 text-center">
+            <button class="btn btn-warning">
+                <a href="{% url 'logout' %}">Logout</a>
+            </button>
+        </div>
     </div>
 {% endblock %}
