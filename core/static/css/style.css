@@ -11,13 +11,13 @@ img {
 }
 
 .container-fluid > div {
-    width:  85%;
+    width: 85%;
     min-width: 300px;
     max-width: 500px;
 }
 
 .card {
-    width: 100%
+    width: 100%;
 }
 
 .social-container {
